@@ -1,7 +1,7 @@
 const TestPage = () => {
   async function createSession() {
     // Send POST request to /proxy/session
-    const postResponse = await fetch("http://127.0.0.1:5000/proxy/session", {
+    const postResponse = await fetch("https://tu-backend.onrender.com/proxy/session", {
       method: "POST",
       credentials: "include", // Ensure cookies are included in the request
     });
@@ -12,7 +12,7 @@ const TestPage = () => {
     );
 
     // Send GET request to /testing (example)
-    const getResponse = await fetch("http://127.0.0.1:5000/testing", {
+    const getResponse = await fetch("https://tu-backend.onrender.com/testing", {
       method: "GET",
       credentials: "include", // Ensure cookies are included in the request
     });
