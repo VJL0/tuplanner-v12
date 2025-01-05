@@ -6,8 +6,9 @@ const TestPage = () => {
         "https://prd-xereg.temple.edu/StudentRegistrationSsb/ssb/term/search?mode=search",
         {
           method: "POST",
-          credentials: "include", // Ensure cookies are included in the request
+          credentials: "include",
           body: JSON.stringify({ term: 202436 }),
+          mode: "no-cors",
         }
       );
 
