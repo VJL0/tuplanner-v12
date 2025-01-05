@@ -3,10 +3,11 @@ const TestPage = () => {
     try {
       // Send POST request to /proxy/session
       const postResponse = await fetch(
-        "https://tu-backend.onrender.com/proxy/session",
+        "https://prd-xereg.temple.edu/StudentRegistrationSsb/ssb/term/search?mode=search",
         {
           method: "POST",
           credentials: "include", // Ensure cookies are included in the request
+          body: JSON.stringify({ term: 202436 }),
         }
       );
 
