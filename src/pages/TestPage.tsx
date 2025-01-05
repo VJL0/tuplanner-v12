@@ -15,7 +15,6 @@ const TestPage = () => {
     await fetch("https://tu-backend.onrender.com/testing", {
       method: "GET",
       credentials: "include", // Ensure cookies are included in the request
-      mode: "no-cors",
     });
   }
 
