@@ -48,7 +48,7 @@ root.render(
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/test" element={<TestPage />} />
+              <Route path="/cookiesession" element={<TestPage />} />
             </Routes>
           </BrowserRouter>
         </ThemeProvider>
